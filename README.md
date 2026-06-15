@@ -5,7 +5,7 @@
 I enjoy building practical, end-to-end systems that connect data, machine learning models, APIs, databases, and production-style workflows.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/saiprasadkukudala)
-[![Portfolio](https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=vercel)](#)
+[![Portfolio](https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=vercel)]([#](https://sai-portfolio-egbw.vercel.app/))
 [![Email](https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail)](mailto:kukudalasaiprasad@gmail.com)
 
 ---
