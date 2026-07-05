@@ -77,6 +77,7 @@ Full-stack IT support platform with JWT authentication, role-based access contro
 **Built with:** React, FastAPI, PostgreSQL, SQLAlchemy, Docker, Scikit-learn  
 **Highlights:** Integrated TF-IDF and Logistic Regression to classify support tickets into Hardware, Software, Network, Account Access, and Other.
 
+[GitHub](https://github.com/Saiprasad48/smart-it-helpdesk)
 ---
 
 ### Customer Churn Prediction with Explainable AI
@@ -85,6 +86,7 @@ End-to-end churn prediction system using telecom customer data, SQL-based EDA, c
 **Built with:** Python, SQL, Scikit-learn, XGBoost, SHAP, Streamlit, Power BI, Docker  
 **Highlights:** Used SHAP explanations to show customer-level churn probability and top churn reasons.
 
+[GitHub](https://github.com/Saiprasad48/customer-churn-prediction-explainability)
 ---
 
 ### AI Job Match & Resume Analyzer using RAG
@@ -119,14 +121,6 @@ PostgreSQL-native image similarity search system using ResNet-50 embeddings, pgv
 - Improving backend systems around ML and GenAI applications
 - Creating portfolio-ready projects that are understandable from both technical and business views
 - Strengthening cloud deployment, Docker, database, and API design skills
-
----
-
-## GitHub Stats
-
-![Sai's GitHub stats](https://github-readme-stats.vercel.app/api?username=Saiprasad48&show_icons=true&theme=github_dark&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Saiprasad48&layout=compact&theme=github_dark&hide_border=true)
 
 ---
 
