@@ -3,7 +3,7 @@
 **M.S. Computer Science Graduate | ML • Data Engineering • Backend • Applied AI**
 
 I build practical systems that connect data, machine learning models, APIs, databases, and deployment workflows.  
-My work focuses on ML engineering, data science, GenAI/RAG pipelines, MLOps, and AI-focused backend development.
+My work focuses on ML engineering, data engineering, LLM agents and evaluation, GenAI/RAG pipelines, MLOps, and AI-focused backend development.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/saiprasadkukudala)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://sai-portfolio-egbw.vercel.app)
@@ -16,7 +16,8 @@ My work focuses on ML engineering, data science, GenAI/RAG pipelines, MLOps, and
 
 - 🎓 M.S. Computer Science graduate from the **University of Oklahoma**
 - 🤖 Interested in **Machine Learning, Data Engineering, Backend Development, and Applied AI**
-- 🛠️ Building production-style projects using APIs, databases, Docker, cloud deployment, and ML workflows
+- 🧠 Building **LLM agents that are measured, not guessed**: eval harnesses, guardrails, and observability
+- 🛠️ Building production-style projects using APIs, databases, Docker, CI/CD, cloud deployment, and ML workflows
 - 📊 Focused on creating projects that are useful, explainable, and easy to understand
 - 🚀 Open to full-time roles in **ML Engineering, Data Engineering, Data Science, and AI-focused Backend Development**
 
@@ -27,6 +28,7 @@ My work focuses on ML engineering, data science, GenAI/RAG pipelines, MLOps, and
 ### Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=flat&logo=postgresql&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-orange?style=flat&logo=openjdk&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=flat&logo=javascript&logoColor=black)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
@@ -40,8 +42,12 @@ My work focuses on ML engineering, data science, GenAI/RAG pipelines, MLOps, and
 ![LightGBM](https://img.shields.io/badge/LightGBM-02569B?style=flat)
 ![SHAP](https://img.shields.io/badge/SHAP-111111?style=flat)
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat)
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat&logo=dbt&logoColor=white)
 
-### GenAI / Search
+### GenAI / Agents / Search
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)
+![MCP](https://img.shields.io/badge/MCP-6E56CF?style=flat)
+![LLM Evals](https://img.shields.io/badge/LLM%20Evals-0E75B6?style=flat)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat)
 ![RAG](https://img.shields.io/badge/RAG-6A5ACD?style=flat)
 ![Hugging Face](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
@@ -51,17 +57,36 @@ My work focuses on ML engineering, data science, GenAI/RAG pipelines, MLOps, and
 ### Backend / Full Stack / Tools
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi)
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel)
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=black)
+![Neon](https://img.shields.io/badge/Neon-00E599?style=flat)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
 ---
 
 ## Featured Projects
 
-### QueryMind — AI SQL Data Analyst Assistant
+### ⭐ QueryPilot: AI Data Analyst (LangGraph Agent + MCP)
+Production-style AI data analyst that answers business questions in plain English over a 100k order ecommerce warehouse. It finds the right tables with hybrid search, writes and validates SQL, runs it on a read-only database role, and explains the result with charts, streamed live. Follow-up questions keep their context.
+
+**Built with:** LangGraph, MCP, FastAPI, Next.js, TypeScript, PostgreSQL, pgvector, dbt, Redis, Docker, GitHub Actions, Gemini, Groq  
+**Highlights:**
+- Eval harness measuring execution accuracy against verified SQL: **90% → 100%** after catching a join fan-out bug, **97.8%** across 90 repeated runs, plus held-out and adversarial safety suites
+- Safety in layers: AST SQL guard (sqlglot), read-only Postgres role, and refusal of writes, prompt injections, and private data requests
+- Model fallbacks with circuit breakers cut worst-case latency from **66 s to about 5 s** on free-tier quotas; Redis caching answers repeat questions in under a second
+- dbt warehouse (15 models, 38 data tests), CI with GitHub Actions, deployed on Vercel, Render, Neon, and Upstash for **$0 per month**
+
+[GitHub](https://github.com/Saiprasad48/querypilot) · [Live Demo](https://querypilot-flame.vercel.app) · [API Docs](https://querypilot-api-9l7d.onrender.com/docs)
+
+---
+
+### QueryMind: AI SQL Data Analyst Assistant
 Full-stack AI data analyst assistant that converts natural language questions into safe SQL queries and helps users explore database insights through a web interface.
 
 **Built with:** React, FastAPI, PostgreSQL, Gemini API, Text-to-SQL, Docker, Vercel, Render, Neon  
@@ -78,6 +103,7 @@ Full-stack IT support platform with JWT authentication, role-based access contro
 **Highlights:** Integrated TF-IDF and Logistic Regression to classify support tickets into Hardware, Software, Network, Account Access, and Other.
 
 [GitHub](https://github.com/Saiprasad48/smart-it-helpdesk)
+
 ---
 
 ### Customer Churn Prediction with Explainable AI
@@ -87,12 +113,14 @@ End-to-end churn prediction system using telecom customer data, SQL-based EDA, c
 **Highlights:** Used SHAP explanations to show customer-level churn probability and top churn reasons.
 
 [GitHub](https://github.com/Saiprasad48/customer-churn-prediction-explainability)
+
 ---
 
 ### AI Job Match & Resume Analyzer using RAG
 RAG-powered resume analysis application that compares resumes against job descriptions and generates match scores, skill gaps, keyword suggestions, and project recommendations.
 
 **Built with:** Python, LangChain, Hugging Face, FAISS, PostgreSQL, Streamlit, Docker  
+
 [GitHub](https://github.com/Saiprasad48/ai-job-match-resume-analyzer)
 
 ---
@@ -101,6 +129,7 @@ RAG-powered resume analysis application that compares resumes against job descri
 End-to-end sales forecasting pipeline with time-series feature engineering, LightGBM model training, MLflow experiment tracking, FastAPI serving, and PostgreSQL storage.
 
 **Built with:** Python, LightGBM, MLflow, FastAPI, PostgreSQL, Docker  
+
 [GitHub](https://github.com/Saiprasad48/retail-demand-forecasting-mlops)
 
 ---
@@ -117,17 +146,17 @@ PostgreSQL-native image similarity search system using ResNet-50 embeddings, pgv
 
 ## What I’m Working On
 
-- Building AI-focused full-stack projects with real deployment workflows
-- Improving backend systems around ML and GenAI applications
-- Creating portfolio-ready projects that are understandable from both technical and business views
-- Strengthening cloud deployment, Docker, database, and API design skills
+- Building LLM agents with real evaluation: golden sets, held-out sets, and adversarial safety suites
+- Making AI systems reliable in production: guardrails, model fallbacks, caching, and rate limiting
+- Building AI-focused full-stack projects with real deployment workflows and CI/CD
+- Strengthening data modeling (dbt), cloud deployment, Docker, database, and API design skills
 
 ---
 
 ## Let’s Connect
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/saiprasadkukudala)
-- 🌐 [Portfolio](https://sai-portfolio-egbv.vercel.app)
+- 🌐 [Portfolio](https://sai-portfolio-egbw.vercel.app)
 - 📧 kukudalasaiprasad@gmail.com
 - 💻 [GitHub](https://github.com/Saiprasad48)
 
