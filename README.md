@@ -1,6 +1,6 @@
 # Hey there! 👋 I'm Sai Prasad Reddy Kukudala
 
-**M.S. Computer Science Graduate | ML • Data Engineering • Backend • Applied AI**
+**ML • Data Engineering • Backend • Applied AI**
 
 I build practical systems that connect data, machine learning models, APIs, databases, and deployment workflows.  
 My work focuses on ML engineering, data engineering, LLM agents and evaluation, GenAI/RAG pipelines, MLOps, and AI-focused backend development.
@@ -8,13 +8,12 @@ My work focuses on ML engineering, data engineering, LLM agents and evaluation, 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/saiprasadkukudala)
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://sai-portfolio-egbw.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/Saiprasad48)
-[![Email](https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kukudalasaiprasad@gmail.com)
+[![Email](https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:saiprasadkukudala18@gmail.com)
 
 ---
 
 ## About Me
 
-- 🎓 M.S. Computer Science graduate from the **University of Oklahoma**
 - 🤖 Interested in **Machine Learning, Data Engineering, Backend Development, and Applied AI**
 - 🧠 Building **LLM agents that are measured, not guessed**: eval harnesses, guardrails, and observability
 - 🛠️ Building production-style projects using APIs, databases, Docker, CI/CD, cloud deployment, and ML workflows
@@ -157,7 +156,7 @@ PostgreSQL-native image similarity search system using ResNet-50 embeddings, pgv
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/saiprasadkukudala)
 - 🌐 [Portfolio](https://sai-portfolio-egbw.vercel.app)
-- 📧 kukudalasaiprasad@gmail.com
+- 📧 saiprasadkukudala18@gmail.com
 - 💻 [GitHub](https://github.com/Saiprasad48)
 
 ---
